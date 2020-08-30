@@ -31,7 +31,7 @@ public class GoogleSearchTest {
 	//Se crean los eventos donde realizaremos nuestros casos de prueba
 	@Test
 	public void testGooglePage() {		
-		//Se crean los web elements para la ejecución
+		//Se crean los web elements para la ejecuciï¿½n
 		WebElement searchbox = driver.findElement(By.name("q"));
 		searchbox.clear();
 		searchbox.sendKeys("Selenium");
@@ -39,11 +39,13 @@ public class GoogleSearchTest {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		assertEquals("Selenium - Buscar con Google", driver.getTitle());		
 	}	
-	//Se crean los enventos para despues de la ejecución
+	//Se crean los enventos para despues de la ejecuciï¿½n
 	@After
 	public void tearDown() {
 		//cierra el navegador una vez completado el caso de prueba
 		driver.quit();
+		
+		
 	}
 	
 	

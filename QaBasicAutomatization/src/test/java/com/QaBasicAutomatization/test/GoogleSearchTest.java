@@ -44,6 +44,9 @@ public class GoogleSearchTest {
 	public void tearDown() {
 		//cierra el navegador una vez completado el caso de prueba
 		driver.quit();
+
+
+		
 }
 	
 	
